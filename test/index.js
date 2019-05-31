@@ -63,6 +63,12 @@ describe("fast-pass", () => {
         var branchedInjector = injector.branch(b);
         branchedInjector.dependencies.should.deepEqual([a,b]);
       })
+      it("Supports 3 extra dependencies (and probably more)", () => {
+        var a={x:1}, b={x:2}, c={x:3};
+        var injector = new Injector();
+        var branchedInjector = injector.branch(a,b,c);
+        branchedInjector.dependencies.should.deepEqual([a,b,c]);
+      })
     })
   } )
 })
