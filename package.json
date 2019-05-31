@@ -25,6 +25,9 @@
   },
   "homepage": "https://github.com/danieldt232/fast-pass#readme",
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "should": "^13.2.3",
+    "should-sinon": "0.0.6",
+    "sinon": "^7.3.2"
   }
 }
